@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alcanzaelpollo.controlador.ControladorReto">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="630.0" pickOnBounds="true">
+         <image>
+            <Image url="@../backgorund/fondo-reto.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="336.0" layoutY="92.0" prefHeight="286.0" prefWidth="257.0" style="-fx-background-color: #1f000030; -fx-background-radius: 10;" />
+      <GridPane fx:id="gridPane" alignment="CENTER" gridLinesVisible="true" layoutX="42.0" layoutY="96.0" prefHeight="280.0" prefWidth="280.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT">
+               <image>
+                  <Image url="@../artefactos/maiz.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pollo" fitHeight="60.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../sprites/pollo/fila-2-columna-14.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="obstaculo" fitHeight="42.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../iconos/obstaculos/piedra.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../backgorund/cesped.jpg" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" prefHeight="24.0" prefWidth="39.0" GridPane.rowIndex="4">
+               <children>
+                  <ImageView fitHeight="12.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../artefactos/huella-mono.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="14.0" fitWidth="12.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../artefactos/huella-mono.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <HBox layoutX="349.0" layoutY="202.0" prefHeight="47.0" prefWidth="227.0" spacing="15.0">
+         <children>
+            <ImageView fx:id="flechaArriba" fitHeight="150.0" fitWidth="45.0" onMouseClicked="#guardarArriba" onMouseEntered="#colorearFlechaArriba" onMouseExited="#descolorearFlechaArriba" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconos/flecha/flecha-arriba.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="flechaAbajo" fitHeight="150.0" fitWidth="45.0" onMouseClicked="#guardarAbajo" onMouseEntered="#colorearFlechaAbajo" onMouseExited="#descolorearFlechaAbajo" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../iconos/flecha/flecha-arriba.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="flechaIzquierda" fitHeight="150.0" fitWidth="45.0" onMouseClicked="#guardarIzquierda" onMouseEntered="#colorearFlechaIzquierda" onMouseExited="#descolorearFlechaIzquierda" pickOnBounds="true" preserveRatio="true" rotate="270.0">
+               <image>
+                  <Image url="@../iconos/flecha/flecha-arriba.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="flechaDerecha" fitHeight="150.0" fitWidth="45.0" onMouseClicked="#guardarDerecha" onMouseEntered="#colorearFlechaDerecha" onMouseExited="#descolorearFlechaDerecha" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../iconos/flecha/flecha-arriba.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+      <Button fx:id="botonMover" layoutX="347.0" layoutY="345.0" mnemonicParsing="false" onAction="#correrMatriz" onMouseEntered="#colorearBotonMover" onMouseExited="#descolorearBotonMover" prefHeight="25.0" prefWidth="235.0" style="-fx-background-color: orange; -fx-background-radius: 10;" text="Mover al mono" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <HBox layoutX="140.0" layoutY="41.0">
+         <children>
+            <Label text="Reto #">
+               <font>
+                  <Font name="Times New Roman Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblReto" text="1">
+               <font>
+                  <Font name="Times New Roman Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ScrollPane layoutX="349.0" layoutY="279.0" prefHeight="51.0" prefWidth="189.0" style="-fx-border-color: black;" vbarPolicy="NEVER">
+        <content>
+            <HBox fx:id="camino" alignment="CENTER" prefHeight="38.0" prefWidth="185.0" spacing="5.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+        </content>
+      </ScrollPane>
+      <Label layoutX="350.0" layoutY="258.0" text="Camino:">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font></Label>
+      <Label layoutX="349.0" layoutY="180.0" text="Dirección:">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font></Label>
+      <HBox fx:id="hboxEstado" alignment="CENTER" layoutX="427.0" layoutY="100.0" prefHeight="66.0" prefWidth="77.0" style="-fx-border-color: orange; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-color: #1f00204f; -fx-background-radius: 10;">
+         <children>
+            <ImageView fx:id="estado" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconos/estado/neutro.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </HBox>
+      <ImageView fx:id="siguiente" fitHeight="51.0" fitWidth="45.0" layoutX="563.0" layoutY="23.0" onMouseClicked="#siguienteReto" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../iconos/flecha/flecha-siguiente-inactiva.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="personaje" fitHeight="51.0" fitWidth="39.0" layoutX="51.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sprites/mono/Animations/monkey_walk_away_1.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="eliminarHbox" alignment="CENTER" layoutX="544.0" layoutY="279.0" onMouseClicked="#eliminarFlecha" onMouseEntered="#colorearEliminar" onMouseExited="#descolorearEliminar" prefHeight="51.0" prefWidth="39.0" style="-fx-border-color: black; -fx-background-color: white;">
+         <children>
+            <ImageView fx:id="eliminar" fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../artefactos/delete.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label layoutX="3.0" layoutY="383.0" text="Universidad del Quindío" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="11.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="estadoTexto" fitHeight="86.0" fitWidth="197.0" layoutX="369.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../fuentes/genial.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="39.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#inicio" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../artefactos/home.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
