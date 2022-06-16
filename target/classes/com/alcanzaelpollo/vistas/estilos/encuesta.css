@@ -1,9 +1,0 @@
-.myButton {
-    -fx-background-color:orange;
-    -fx-background-radius: 10;
-    -fx-effect: dropshadow(three-pass-box, black, 5, 0, 0, 5);
-}
-
-.myButton:hover {
-    -fx-background-color:green;
-}
