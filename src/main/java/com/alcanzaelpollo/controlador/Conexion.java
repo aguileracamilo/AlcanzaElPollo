@@ -85,7 +85,8 @@ public class Conexion {
 
        Double coeficiente=0.0;
         Double numerador=0.0;
-        Double denominador=0.0;
+        Double denominador1=0.0;
+        Double denominador2=0.0;
         nivelR.next();
         preguntaR.next();
         int preguntaV ;
@@ -95,12 +96,18 @@ public class Conexion {
         do {
             preguntaV= Integer.parseInt(preguntaR.getString("pregunta"));
             nivelV=Integer.parseInt(nivelR.getString("puntuacion"));
+            System.out.println(promedioPregunta);
+            System.out.println(promedioNivel);
+            System.out.println(preguntaV);
+            System.out.println(nivelV);
+
              numerador += (preguntaV-promedioPregunta)*(nivelV-promedioNivel);
-            denominador += Math.pow((preguntaV-promedioPregunta), 2) *Math.pow((nivelV-promedioNivel),2);
+            denominador1 += Math.pow((preguntaV-promedioPregunta), 2);
+            denominador2 +=  Math.pow((nivelV-promedioNivel),2);
             preguntaR.next();
         } while(nivelR.next());
 
-        coeficiente=numerador/(Math.pow(denominador,(1/2)));
+        coeficiente=numerador/(Math.sqrt((denominador1*denominador2)));
         return coeficiente;
     }
 

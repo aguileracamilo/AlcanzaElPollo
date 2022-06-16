@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alcanzaelpollo.controlador.ControladorEncuesta">
+   <children>
+      <ImageView fitHeight="466.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../backgorund/4851821.jpg" />
+         </image>
+      </ImageView>
+      <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="600.0">
+         <top>
+            <Label text="Encuesta" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="28.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" spacing="5.0">
+                     <children>
+                        <Label text="Identificación" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman" size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtNombre" promptText="Ingresa tu identificacion" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Times New Roman" size="16.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="¿El juego es fácil de jugar?" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="560.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="estrellaFacil1" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaFacil1" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="estrellaFacil2" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaFacil2" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="estrellaFacil3" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaFacil3" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="estrellaFacil4" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaFacil4" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="estrellaFacil5" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaFacil5" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="15.0" prefWidth="560.0" spacing="53.0">
+                     <children>
+                        <Label text="1" textFill="WHITE" />
+                        <Label text="2" textFill="WHITE" />
+                        <Label text="3" textFill="WHITE" />
+                        <Label text="4" textFill="WHITE" />
+                        <Label text="5" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="¿El juego es divertido?" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="52.0" prefWidth="600.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="estrellaDivertido1" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaDivertido1" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="estrellaDivertido2" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaDivertido2" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="estrellaDivertido3" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaDivertido3" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="estrellaDivertido4" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaDivertido4" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="estrellaDivertido5" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaDivertido5" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="15.0" prefWidth="560.0" spacing="53.0">
+                     <children>
+                        <Label text="1" textFill="WHITE" />
+                        <Label text="2" textFill="WHITE" />
+                        <Label text="3" textFill="WHITE" />
+                        <Label text="4" textFill="WHITE" />
+                        <Label text="5" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="¿El juego es bonito?" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="52.0" prefWidth="600.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="estrellaBonito1" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaBonito1" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="estrellaBonito2" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaBonito2" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="estrellaBonito3" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaBonito3" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="estrellaBonito4" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaBonito4" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="estrellaBonito5" fitHeight="150.0" fitWidth="50.0" onMouseClicked="#asignarEstrellaBonito5" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/estrellas/estrella-inactiva.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="15.0" prefWidth="560.0" spacing="53.0">
+                     <children>
+                        <Label text="1" textFill="WHITE" />
+                        <Label text="2" textFill="WHITE" />
+                        <Label text="3" textFill="WHITE" />
+                        <Label text="4" textFill="WHITE" />
+                        <Label text="5" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+               </padding>
+            </VBox>
+         </center>
+         <padding>
+            <Insets bottom="20.0" top="15.0" />
+         </padding>
+         <bottom>
+            <Button mnemonicParsing="false" onAction="#finalizar" prefHeight="29.0" prefWidth="177.0" styleClass="myButton" stylesheets="@estilos/encuesta.css" text="Finalizar y guardar" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+      </BorderPane>
+      <ImageView fx:id="pollo2" fitHeight="43.0" fitWidth="63.0" layoutX="39.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="pollo1" fitHeight="43.0" fitWidth="63.0" layoutX="43.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="pollo4" fitHeight="43.0" fitWidth="63.0" layoutX="472.0" layoutY="298.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="pollo3" fitHeight="43.0" fitWidth="63.0" layoutX="469.0" layoutY="188.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
